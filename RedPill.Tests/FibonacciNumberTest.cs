@@ -9,7 +9,7 @@ namespace ReadifyRedPill.Tests
     {
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void FibonacciNumberTest_When_Greaterthan92_Should_Fail_Throw_ArgumentOutOfRangeException()
+        public void FibonacciNumberTest_When_Greaterthan92_Should_Faill_Throw_ArgumentOutOfRangeException()
         {
             RedPillService redPill = new RedPillService();
             redPill.FibonacciNumber(93);
@@ -100,6 +100,11 @@ namespace ReadifyRedPill.Tests
             long result = redPill.FibonacciNumber(number);
             return result;
             
+        }
+         [TestMethod]
+        public void TEST()
+        {
+            Assert.AreEqual(TestFib(0), 0);
         }
     }
 }
