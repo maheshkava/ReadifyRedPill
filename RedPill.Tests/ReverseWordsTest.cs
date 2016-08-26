@@ -32,7 +32,7 @@ namespace ReadifyRedPill.Tests
         public void ReverseWordsTest_When_InputWithSpace_Should_Return_ReverseStringSpace()
         {
             RedPillService redPill = new RedPillService();
-            string result = redPill.ReverseWords("arman najafi");
+            string result = redPill.ReverseWords("arman najafiXXX");
             Assert.AreEqual(result, "namra ifajan");
         }
 
